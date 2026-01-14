@@ -20,8 +20,6 @@ function App() {
         <Route path='products/:id' element={<Productsinfo />} />
         <Route path="profile" element={<h1>Profile</h1>} />
         <Route path="account" element={<Account />  } />
-
-
         </Route>
 
       </Routes>

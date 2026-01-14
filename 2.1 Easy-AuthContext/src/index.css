@@ -1,0 +1,15 @@
+.light, .dark {
+  min-height: 100vh; /* make the div fill the whole screen */
+  margin: 0;
+  padding: 0;
+}
+
+.light {
+  background-color: rgb(219, 22, 22);
+  color: black;
+}
+
+.dark {
+  background-color: rgb(41, 41, 41); /* dark gray, not black */
+  color: #f6f2f2;
+}
