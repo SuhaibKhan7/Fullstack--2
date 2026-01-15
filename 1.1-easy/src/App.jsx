@@ -3,7 +3,7 @@ import { useState } from 'react';
 import { useEffect } from 'react'
 
 function App() {
-  const[user,setUser]=useState('')
+  const[user,setUser]=useState([])
 
   useEffect(() => {
     async function fetchData() {
@@ -18,9 +18,9 @@ function App() {
     <div>
       <h1>User List ....</h1>
       <ol>
-      {user.map((u) => (
-        <li> {u.name }</li>
-      ))}
+        {user.map((u) => (
+          <li>{ u.name}</li>
+      ) )}
 
       </ol>
     </div>
