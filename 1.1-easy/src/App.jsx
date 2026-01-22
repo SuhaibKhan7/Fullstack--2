@@ -1,28 +1,21 @@
 import React from 'react'
-import { useState } from 'react';
 import { useEffect } from 'react'
-
+import { useState } from 'react'
 function App() {
-  const[user,setUser]=useState([])
-
+const[counter,setcounter]=useState(10)
+ 
+  function inc() {
+    setcounter(counter + 1)
+    
+  }
   useEffect(() => {
-    async function fetchData() {
-      const response = await fetch("https://jsonplaceholder.typicode.com/users");
-      const data = await response.json();
-      console.log(data)
-      setUser(data)
-    }
-    fetchData();
-  },[])
+  console.log("hi")
+},[counter])
+
   return (
     <div>
-      <h1>User List ....</h1>
-      <ol>
-        {user.map((u) => (
-          <li>{ u.name}</li>
-      ) )}
-
-      </ol>
+      {counter}
+      <button onClick={inc}>+</button>
     </div>
   )
 }
