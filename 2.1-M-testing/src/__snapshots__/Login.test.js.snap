@@ -6,7 +6,7 @@ exports[`matches snapshot 1`] = `
     class="container"
   >
     <h1>
-      Welcome John
+      welcome John
     </h1>
     <form>
       <input

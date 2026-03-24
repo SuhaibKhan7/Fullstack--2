@@ -8,6 +8,9 @@ test('renders learn react link', () => {
   expect(linkElement).toBeInTheDocument();
 
 });
+
+
+
 test("check count", () => {
     render(<App />);
     const count = screen.getByText("count: 0");
@@ -20,3 +23,4 @@ test("check count", () => {
   const count1 = screen.getByText("count: 1");
   expect(count1).toBeInTheDocument(); 
 })
+
